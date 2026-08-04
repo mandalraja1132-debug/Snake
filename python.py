@@ -770,16 +770,26 @@
 # img=PIL.Image.open("C:/Users/91879/Pictures/Screenshots/Screenshot 2026-07-27 221116.png")
 # a,b=img.size
 # print(a,"X",b)
-dict={"JHON":37,"Madro":22}
-dict1={"Mohit":40,"JHON":37}
-b=(dict|dict1)
-print(b)
+# dict={"JHON":37,"Madro":22}
+# dict1={"Mohit":40,"JHON":37}
+# b=(dict|dict1)
+# print(b)
+# print(dict)
+        
+# a=[12,3,4,56,67,78,23,45,56,7,8]
+# for i ,v in enumerate(a):
+# #     print(i,v)
+# a=[12,3,4,56,67,78,23,45,56,7,8]
+# for i in range(len(a)):
+#     print(i," ",a[i])
 
-        
-  
-        
-        
-                
+a={
+    "raj":34,
+    "sumit":55,
+    "minal":23
+    }
+for key ,value in a.items():
+    print(key," ",value)
 
 
 
