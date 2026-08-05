@@ -788,10 +788,9 @@ a={
     "sumit":55,
     "minal":23
     }
-for key ,value in a.items():
-    print(key," ",value)
+# for key ,value in a.items():
+#     print(key," ",value)
 
-
-
-
+b=sorted(a.items(),lambda x:x[1])
+print(b)
 
