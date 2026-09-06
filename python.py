@@ -767,30 +767,68 @@
 # import PIL
 # from PIL import Image
 
-# img=PIL.Image.open("C:/Users/91879/Pictures/Screenshots/Screenshot 2026-07-27 221116.png")
-# a,b=img.size
-# print(a,"X",b)
-# dict={"JHON":37,"Madro":22}
-# dict1={"Mohit":40,"JHON":37}
-# b=(dict|dict1)
-# print(b)
-# print(dict)
+# # img=PIL.Image.open("C:/Users/91879/Pictures/Screenshots/Screenshot 2026-07-27 221116.png")
+# # a,b=img.size
+# # print(a,"X",b)
+# # dict={"JHON":37,"Madro":22}
+# # dict1={"Mohit":40,"JHON":37}
+# # b=(dict|dict1)
+# # print(b)
+# # print(dict)
         
-# a=[12,3,4,56,67,78,23,45,56,7,8]
-# for i ,v in enumerate(a):
-# #     print(i,v)
-# a=[12,3,4,56,67,78,23,45,56,7,8]
-# for i in range(len(a)):
-#     print(i," ",a[i])
+# # a=[12,3,4,56,67,78,23,45,56,7,8]
+# # for i ,v in enumerate(a):
+# # #     print(i,v)
+# # a=[12,3,4,56,67,78,23,45,56,7,8]
+# # for i in range(len(a)):
+# #     print(i," ",a[i])
 
-a={
-    "raj":34,
-    "sumit":55,
-    "minal":23
-    }
+# a={
+#     "raj":34,
+#     "sumit":55,
+#     "minal":23
+#     }
 # for key ,value in a.items():
 #     print(key," ",value)
 
-b=sorted(a.items(),lambda x:x[1])
-print(b)
+# b=sorted(a.items(),lambda x:x[1])
+# print(b)
+# c=sorted(a.values())
+# print(c)
+
+# import re
+# text="quick brown fox jumped over the lazy brown dog."
+# # match=re.findall("brown",text)
+# # print(match)
+# # if match :
+# #     print("match foud")
+# #     # print("Start index", match.start())
+# #     # print("end index ", match.end())
+# new_text=re.sub("fox","cat",text)
+# # print(new_text)
+# def greet(name="friend"):
+#     print(f"Hello, {name}! Welcome!")
+try:
+    a=int(input("enter a number: "))
+    b=int(input("enter a number: "))
+    print("what kind of operation you want to perform: + for addition \n, - for subtraction \n, * for multiplication \n, / for division")
+    c=input("enter a operator: ")
+    match c:
+        case "+":
+            print(f"sum of {a} and {b} is {a+b}")
+    match c:
+        case "-":
+            print(f"difference between {a} and {b} is {a-b}")
+    match c:
+        case "*":
+            print(f"Prduct of {a} and {b} is {a*b}")
+    match c:
+        case "/":
+            print(f"Division of {a} and {b} is {a/b}")
+        case default:
+            print(f"There is an error check numbers {a},{b} or the operator {c}")
+
+except Exception as e:
+    print("enter valid number",e)
+
 
