@@ -869,22 +869,77 @@
 #         break
 # print("you earned :", point ,"points")
 
-from pathlib import Path
+# from pathlib import Path
 
-from PyPDF2 import PdfWriter
+# from PyPDF2 import PdfWriter
 
 
-merger = PdfWriter()
-pdf = []
-script_dir = Path(__file__).parent
-n = int(input("enter no. of pdfs you waana merge : "))
+# merger = PdfWriter()
+# pdf = []
+# script_dir = Path(__file__).parent
+# n = int(input("enter no. of pdfs you waana merge : "))
 
-for i in range(n):
-    name = input(f"enter name of the pdfs {i + 1} : ")
-    pdf.append(script_dir / name)
-for a in pdf:
-    merger.append(a)
+# for i in range(n):
+#     name = input(f"enter name of the pdfs {i + 1} : ")
+#     path = script_dir / name
+#     if not path.exists():
+#         raise FileNotFoundError(f"Could not find '{name}' in '{script_dir}'")
+#     pdf.append(path)
+# for a in pdf:
+#     with open(a, "rb") as input_pdf:
+#         merger.append(input_pdf)
 
-with open(script_dir / "merged-pdf.pdf", "wb") as output:
-    merger.write(output)
-merger.close()
+# with open(script_dir / "merged-pdf.pdf", "wb") as output:
+#     merger.write(output)
+# merger.close()
+# a="cat on hat"
+# for i in a:
+#     for j in range(len(a)):
+#     if i=="h":
+#         print("present",i)
+
+
+# a=input("enter  a word :")
+# b=a[::-1]
+# if a==b:
+#     print("palindrome")
+# else:
+#     print("not")
+
+
+# a="Narender Modi"
+# print(a[0::2])   
+    
+    
+# a=input("enter a word :")
+# b=input("enter the ch to find :")
+# count=0
+
+# for i in a:
+#     if i == b:
+#         count+=1
+# print(count)
+    
+    
+# s="my name is rudr"
+# b=s.replace("is","was")
+# print(b)
+
+# a="40,30,10"
+# b=a.split()
+# c=list(b)
+# print(c)
+
+# import time
+# from plyer import notification
+
+# while True :
+#     notification.notify(title="please sip some water",
+#                         message="drink some water")
+#     time.sleep(3)
+ 
+    
+    
+    
+        
+    
