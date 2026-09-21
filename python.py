@@ -937,9 +937,47 @@
 #     notification.notify(title="please sip some water",
 #                         message="drink some water")
 #     time.sleep(3)
- 
+
+
+# import os
+
+# def file_manager(files,ext):
+#     files_with=[i for i in files if i.endswith  ]
+#     pass
+
+# if __name__=="__main__":
+#     files=os.listdir()
+#     print(files)
+#     file_manager(files,".jpg")
+# from functools import reduce
+# import math
+
+# from functools import reduce
+
+
+# n=int(input("enter no. of element to be in list: "))
+# num=list(map(int,input("enter elements of lis split by ',' :").split(",")))
+# new=list(map(lambda x:x*x,num))
+# print(new)
+
+# def check(x):
+#     if x>=9:
+#         return True
+#     else:
+#         return False
+# def sum(a,b):
+#     return a+b
+# new=reduce(sum,num)
+# print(new)
+
+# while True:
     
     
-    
-        
-    
+#     try:
+#         a=int(input("enter 1st no. : "))
+#         b=int(input("enter 2nd no. : "))
+#         print(a+b)
+#     except ValueError:
+#         print("enter valid no.")
+#     except Exception as e :
+#         print("enter valid number",e)
