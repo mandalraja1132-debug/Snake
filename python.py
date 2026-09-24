@@ -988,15 +988,23 @@
 # if b==0:
 #     raise ValueError("enter value greater than 0 ")
 # print(a+b)
-import os
-def arenge(files,ext):
-    files_with_ext=[file for file in files if file.endswith(ext)]
-    print(files_with_ext)
+# import os
+# def arenge(files,ext):
+#     files_with_ext=[file for file in files if file.endswith(ext)]
+#     print(files_with_ext)
     
-    for i,file in enumerate(files_with_ext):
-        os.rename(file,f"x_photo-{i+1}{ext}")
-    pass
+#     for i,file in enumerate(files_with_ext):
+#         os.rename(file,f"x_photo-{i+1}{ext}")
+#     pass
 
-if __name__=="__main__":
-    files=os.listdir()
-    arenge(files,".jpg")
+# if __name__=="__main__":
+#     files=os.listdir()
+#     arenge(files,".jpg")
+# qr project
+
+# import qrcode 
+
+# url=input("enter your url: ")
+# file_name= input("enter file name : ")
+# img= qrcode.make(url)
+# img.save(file_name +".png")
