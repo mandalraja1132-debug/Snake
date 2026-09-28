@@ -1008,3 +1008,32 @@
 # file_name= input("enter file name : ")
 # img= qrcode.make(url)
 # img.save(file_name +".png")
+# a={1,3,5,7,5,8}
+# b={2,4,3}
+# c=a.difference(b)
+# print(c)
+
+# class car:
+#     def __init__(self, name, model, year):
+#         self.name = name
+#         self.model = model
+#         self.year = year
+         
+#     def print(self):
+#         print(f"Car Name: {self.name}, Model: {self.model}, Year: {self.year}")
+
+# car1=car("tata","seirra","2026")
+# car2=car("tata","nexon","2024")
+# print(car1.name,car1.model)
+# print(car2.name,car2.model)
+
+from pydantic import BaseModel, EmailStr
+from typing import Optional
+
+class student(BaseModel):
+    name : str
+    age : int
+    email :EmailStr
+dict1={"name":"don","age":23,"email":"don11@gmail.com"}
+r1=student(**dict1)
+print(r1)
