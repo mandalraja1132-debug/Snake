@@ -1027,13 +1027,32 @@
 # print(car1.name,car1.model)
 # print(car2.name,car2.model)
 
-from pydantic import BaseModel, EmailStr
-from typing import Optional
+# from pydantic import BaseModel, EmailStr,Field
+# from typing import Optional
 
-class student(BaseModel):
-    name : str
-    age : int
-    email :EmailStr
-dict1={"name":"don","age":23,"email":"don11@gmail.com"}
-r1=student(**dict1)
-print(r1)
+# class student(BaseModel):
+#     name : str
+#     age : int
+#     email :EmailStr
+#     cgpa : float=Field(gt=0,lt=10.1)
+    
+# dict1={"name":"don","age":23,"email":"don11@gmail.com","cgpa":10}
+# r1=student(**dict1)
+# print(r1)
+# student_json=r1.model_dump_json()
+# print(student_json)
+
+class student:
+    def __init__(self,name,grade,percentage,team):
+        self.name=name
+        self.grade=grade
+        self.percentage=percentage
+        self.team=team
+        
+    def get_percentage(self):
+        return self.percentage
+    def student_detail(self):
+        print(f"{self.name} is in class : {self.grade} with percentage {self.percentage}%is from (self.team)")
+    
+s1=student("Madav",12,94,"ABVP")
+s1.student_detail()
