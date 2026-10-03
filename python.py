@@ -1042,17 +1042,33 @@
 # student_json=r1.model_dump_json()
 # print(student_json)
 
-class student:
-    def __init__(self,name,grade,percentage,team):
-        self.name=name
-        self.grade=grade
-        self.percentage=percentage
-        self.team=team
+# class student:
+#     def __init__(self,name,grade,percentage,team):
+#         self.name=name
+#         self.grade=grade
+#         self.percentage=percentage
+#         self.team=team
         
-    def get_percentage(self):
-        return self.percentage
-    def student_detail(self):
-        print(f"{self.name} is in class : {self.grade} with percentage {self.percentage}%is from (self.team)")
+#     def get_percentage(self):
+#         return self.percentage
+#     def student_detail(self):
+#         print(f"{self.name} is in class : {self.grade} with percentage {self.percentage}%is from (self.team)")
     
-s1=student("Madav",12,94,"ABVP")
-s1.student_detail()
+# s1=student("Madav",12,94,"ABVP")
+# s1.student_detail()
+
+import numpy as np
+
+arr1=np.array([1,42,13,44,14,33])
+arr2=np.array([5,61,7,81,40])
+
+a1=arr1>18
+a2=arr2>18
+f1=arr1[a1]
+f2=arr2[a2]
+# print(f1)
+# print(f2)
+
+arr=np.array([f1,f2])
+print(arr)
+print(arr[0:2,0:2])
