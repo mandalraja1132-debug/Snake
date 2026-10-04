@@ -1059,16 +1059,61 @@
 
 import numpy as np
 
-arr1=np.array([1,42,13,44,14,33])
-arr2=np.array([5,61,7,81,40])
+# arr1=np.array([1,42,13,44,14,33])
+# arr2=np.array([5,61,7,81,40])
 
-a1=arr1>18
-a2=arr2>18
-f1=arr1[a1]
-f2=arr2[a2]
-# print(f1)
-# print(f2)
+# a1=arr1>18
+# a2=arr2>18
+# f1=arr1[a1]
+# f2=arr2[a2]
+# # print(f1)
+# # print(f2)
 
-arr=np.array([f1,f2])
-print(arr)
-print(arr[0:2,0:2])
+# arr=np.array([f1,f2])
+# print(arr)
+# print(arr[0:2,0:2])
+# arr=np.array([(range(10,101))])
+# print(arr.shape)
+
+
+# import time
+# lis1=list(range(10,10000))
+# list2=list(range(10,10000))
+# start=time.time()
+# print(start)
+# result=(x*y for x,y in zip(lis1,list2))
+# end=time.time()
+# print(end)
+
+# print("================================")
+
+# arr1=np.array(lis1)
+# arr2=np.array(list2)
+# start1=time.time()
+# print(start1)
+# resul=arr1*arr2
+# end1=time.time()
+# print(end1)
+
+# arr=np.ones((3,3))
+# print(arr)
+# zer=np.zeros((2,4))
+# print(zer)
+# full=np.full((3,2),4)
+# print(full)
+# eye=np.eye(4)
+# print(eye)
+# var=np.arange(10,100,9)
+# print(var)
+
+# arr=np.array([[1,3,5],
+#               [3,7,4],
+#               [9,12,3]])
+
+# ax=np.sum(arr,axis=1)
+# print(ax)
+arr=np.array([[[1,2,3],
+          [4,5,6]],
+          [[11,12,13],
+           [14,15,16]]])
+print(arr[:,0,:])
