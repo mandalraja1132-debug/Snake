@@ -1112,8 +1112,16 @@ import numpy as np
 
 # ax=np.sum(arr,axis=1)
 # print(ax)
-arr=np.array([[[1,2,3],
-          [4,5,6]],
-          [[11,12,13],
-           [14,15,16]]])
-print(arr[:,0,:])
+# arr=np.array([[[1,2,3],
+#           [4,5,6]],
+#           [[11,12,13],
+#            [14,15,16]]])
+# print(arr[:,0,:])
+# checking empty list in pthon 
+l=[2,3,4,5]
+
+if len(l)==0:
+    print("empty")
+else:
+    print("list contain : ",len(l) ,"elements")
+    
