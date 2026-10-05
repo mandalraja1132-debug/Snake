@@ -1057,7 +1057,7 @@
 # s1=student("Madav",12,94,"ABVP")
 # s1.student_detail()
 
-import numpy as np
+# import numpy as np
 
 # arr1=np.array([1,42,13,44,14,33])
 # arr2=np.array([5,61,7,81,40])
@@ -1118,10 +1118,19 @@ import numpy as np
 #            [14,15,16]]])
 # print(arr[:,0,:])
 # checking empty list in pthon 
-l=[2,3,4,5]
+# l=[2,3,4,5]
 
-if len(l)==0:
-    print("empty")
-else:
-    print("list contain : ",len(l) ,"elements")
-    
+# if len(l)==0:
+#     print("empty")
+# else:
+#     print("list contain : ",len(l) ,"elements")
+
+# copying a content of 1 file to another through shutil librabry
+
+# from shutil import copyfile
+# copyfile("C:/Users/OneDrive/91023/Desktop/code/flask/jain.txt","C:/Users/91023/OneDrive/Desktop/code/Snake/arc.txt")
+
+l1=["galaxy","moon","universe","stars"]
+l2=["sun","moon","stars"]
+l3=set(l1+l2)
+print(list(l3))
