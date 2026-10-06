@@ -1130,7 +1130,17 @@
 # from shutil import copyfile
 # copyfile("C:/Users/OneDrive/91023/Desktop/code/flask/jain.txt","C:/Users/91023/OneDrive/Desktop/code/Snake/arc.txt")
 
-l1=["galaxy","moon","universe","stars"]
-l2=["sun","moon","stars"]
-l3=set(l1+l2)
-print(list(l3))
+# l1=["galaxy","moon","universe","stars"]
+# l2=["sun","moon","stars"]
+# l3=set(l1+l2)
+# print(list(l3))
+dict={
+    'raj':91,
+    'sam':67,
+    'taj':33
+}
+a=input("enter the word : ")
+if a in dict.keys():
+    print("present")
+else:
+    print("abki bar 400 par")
