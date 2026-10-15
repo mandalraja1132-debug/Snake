@@ -1128,19 +1128,28 @@
 # copying a content of 1 file to another through shutil librabry
 
 # from shutil import copyfile
-# copyfile("C:/Users/OneDrive/91023/Desktop/code/flask/jain.txt","C:/Users/91023/OneDrive/Desktop/code/Snake/arc.txt")
+# copyfile("C:/Users/OneDrive/91023/Desktop/code/flask/jain.txt","C:/Users/91023/OneDrive/Desktop/code/Snake/arc.txt")modi
 
 # l1=["galaxy","moon","universe","stars"]
 # l2=["sun","moon","stars"]
 # l3=set(l1+l2)
 # print(list(l3))
-dict={
-    'raj':91,
-    'sam':67,
-    'taj':33
-}
-a=input("enter the word : ")
-if a in dict.keys():
-    print("present")
-else:
-    print("abki bar 400 par")
+# dict={
+#     'raj':91,
+#     'sam':67,
+#     'taj':33
+# }
+# a=input("enter the word : ")
+# if a in dict.keys():
+#     print("present")
+# else:
+#     print("abki bar 400 par")
+lis=[1,2,3,9,6,7,3,5,2,5,8]
+result=[]
+for i in lis:
+    if i not in result:
+        result.append(i)
+
+print(result)
+    
+        
