@@ -1144,12 +1144,24 @@
 #     print("present")
 # else:
 #     print("abki bar 400 par")
-lis=[1,2,3,9,6,7,3,5,2,5,8]
-result=[]
-for i in lis:
-    if i not in result:
-        result.append(i)
+# lis=[1,2,3,9,6,7,3,5,2,5,8]
+# result=[]
+# for i in lis:
+#     if i not in result:
+#         result.append(i)
 
-print(result)
-    
-        
+# print(result)
+def fact(a):
+    # fact1=1
+    return (a-1)*a
+
+print(fact(4))
+
+# def fact(a):
+#     fact1=1
+#     for i in range(1,a+1):
+#         fact1*=i
+#     print(fact1)
+
+
+# fact(4)   
