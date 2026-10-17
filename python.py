@@ -1151,11 +1151,11 @@
 #         result.append(i)
 
 # print(result)
-def fact(a):
-    # fact1=1
-    return (a-1)*a
+# def fact(a):
+    
+#     return (a-1)*a
 
-print(fact(4))
+# print(fact(4))
 
 # def fact(a):
 #     fact1=1
@@ -1165,3 +1165,11 @@ print(fact(4))
 
 
 # fact(4)   
+
+def fact(a):
+    if a==1:
+        return 1
+    else:
+        return a*fact(a-1)
+    
+print(fact(4))
