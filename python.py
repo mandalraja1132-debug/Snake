@@ -1166,10 +1166,19 @@
 
 # fact(4)   
 
-def fact(a):
-    if a==1:
-        return 1
-    else:
-        return a*fact(a-1)
+# def fact(a):
+#     if a==1:
+#         return 1
+#     else:
+#         return a*fact(a-1)
     
-print(fact(4))
+# print(fact(4))
+a="I love Python Programming"
+char_count={}
+for i in a.lower().replace(" ",""):
+    if i in char_count :
+        char_count[i]+=1
+    else:
+        char_count[i]=1
+
+print(char_count)
