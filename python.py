@@ -1173,12 +1173,32 @@
 #         return a*fact(a-1)
     
 # print(fact(4))
-a="I love Python Programming"
-char_count={}
-for i in a.lower().replace(" ",""):
-    if i in char_count :
-        char_count[i]+=1
-    else:
-        char_count[i]=1
+# a="I love Python Programming"
+# char_count={}
+# for i in a.lower().replace(" ",""):
+#     if i in char_count :
+#         char_count[i]+=1
+#     else:
+#         char_count[i]=1
 
-print(char_count)
+# print(char_count)
+
+# class employee:
+#     def __init__(self,name,depatment,salary):
+#         self.name=name
+#         self.department=depatment
+#         self.salary=salary
+#     def get_salary_(self):
+#         return self.salary
+#     def get_info(self):
+#         print(f"Employee name {self.name} from {self.department} get salary {self.salary} ")
+        
+# e1=employee("rohan","HR",39000)
+# print(e1.get_salary_())
+# e1.get_info()
+
+a=[12,1,23,34,33,21,65,32,77,89,46,81,92,100,99,26,78,112,453,132,123]
+a.sort(reverse=True)
+print(a)
+print(a[1])
+
