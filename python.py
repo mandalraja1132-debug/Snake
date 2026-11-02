@@ -1197,8 +1197,18 @@
 # print(e1.get_salary_())
 # e1.get_info()
 
-a=[12,1,23,34,33,21,65,32,77,89,46,81,92,100,99,26,78,112,453,132,123]
-a.sort(reverse=True)
-print(a)
-print(a[1])
+# a=[12,1,23,34,33,21,65,32,77,89,46,81,92,100,99,26,78,112,453,132,123]
+# a.sort(reverse=True)
+# print(a)
+# print(a[1])
+
+n=int(input("enter num : "))
+total=0
+while n>0:
+    b=n%10
+    n=n//10
+    total+=b
+print(total)
+    
+
 
