@@ -1202,13 +1202,45 @@
 # print(a)
 # print(a[1])
 
-n=int(input("enter num : "))
-total=0
-while n>0:
-    b=n%10
-    n=n//10
-    total+=b
-print(total)
+# n=int(input("enter num : "))
+# total=0
+# while n>0:
+#     b=n%10
+#     n=n//10
+#     total+=b
+# print(total)
+
+# class employee:
+#     company="aura"
     
+#     def __init__(self,name,depart,salary,company):
+#         self.name=name
+#         self.depart=depart
+#         self.salary=salary
+#         self.company=company
+    
+#     def get_salary(self):
+#         return self.salary
+    
+#     def get_info(self):
+#         print(f"Employee name {self.name} from {self.department} get salary {self.salary} ")
+        
+        
+# e1=employee("raj","hr",35000,"asus")
+# print(e1.company)
 
+# lis=[1,2,3,1,3,2,4,3,7,6,4,7,4,7,10,3,2,3,74,2,4,4,8,9,4,79,4,7,8,9,5,4]
+# lis1=[]
+# for i in lis:
+#     if i not in lis1:
+#         lis1.append(i)
+        
+# print(lis1)
+    
+def fact(n):
+    if n==1:
+        return n
+    else:
+        return n*fact(n-1)
 
+print(fact(3))
