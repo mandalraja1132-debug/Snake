@@ -1237,10 +1237,39 @@
         
 # print(lis1)
     
-def fact(n):
-    if n==1:
-        return n
-    else:
-        return n*fact(n-1)
+# def fact(n):
+#     if n==1:
+#         return n
+#     else:
+#         return n*fact(n-1)
 
-print(fact(3))
+# print(fact(3))
+
+# class animal:
+#     def __init__(self,name,legs=4):
+#         self.name=name
+#         self.legs=legs
+#     def sound(self):
+#         print("some sound")
+# class Dog(animal):
+#     def sound(self):
+#         print(self.legs)
+#         print("woof")
+# class Cat(animal):
+#     def sound(self):
+#         print("Meo")
+        
+# e1=Dog("tommy")
+# e1.sound()
+
+a="Hello my name is Rudr ,from Jamshedpur currently Looking for a Job".lower()
+count={}
+for i in a:
+    if i in count:
+        count[i]+=1
+    else:
+        count[i]=1 
+print(count)
+    
+    
+    
