@@ -1262,14 +1262,34 @@
 # e1=Dog("tommy")
 # e1.sound()
 
-a="Hello my name is Rudr ,from Jamshedpur currently Looking for a Job".lower()
-count={}
-for i in a:
-    if i in count:
-        count[i]+=1
-    else:
-        count[i]=1 
-print(count)
+# a="Hello my name is Rudr ,from Jamshedpur currently Looking for a Job".lower()
+# count={}
+# for i in a:
+#     if i in count:
+#         count[i]+=1
+#     else:
+#         count[i]=1 
+# print(count)
+
+class animal:
+    def __init__(self,name,legs=4):
+        self.name=name
+        self.legs=legs
+    def sound(self):
+        print("some sound")
+class Dog(animal):
+    def sound(self):
+        
+        print(self.legs)
+        super().sound()
+        print("woof")
+class Cat(animal):
+    def sound(self):
+        super().sound()
+        print("Meo")
+        
+e1=Dog("tommy")
+e1.sound()
     
     
     
