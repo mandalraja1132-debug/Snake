@@ -1271,25 +1271,51 @@
 #         count[i]=1 
 # print(count)
 
-class animal:
-    def __init__(self,name,legs=4):
-        self.name=name
-        self.legs=legs
-    def sound(self):
-        print("some sound")
-class Dog(animal):
-    def sound(self):
+# class animal:
+#     def __init__(self,name,legs=4):
+#         self.name=name
+#         self.legs=legs
+#     def sound(self):
+#         print("some sound")
+# class Dog(animal):
+#     def sound(self):
+#         print(self.legs)
+#         super().sound()
+#         print("woof")
+# class Cat(animal):
+#     def sound(self):
+#         super().sound()
+#         print("Meo")
         
-        print(self.legs)
-        super().sound()
-        print("woof")
-class Cat(animal):
-    def sound(self):
-        super().sound()
-        print("Meo")
-        
-e1=Dog("tommy")
-e1.sound()
+# e1=Dog("tommy")
+# e1.sound()
     
     
+class point:
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+        
+    def sum(self,p):
+        return point((self.x+p.x),(self.y+p.y))
+    
+    def print_point(self):
+        print( f"X is {self.x} and y is {self.y}")
+        
+    def __sub__(self,p):
+        return point((self.x-p.x),(self.y-p.y))
+        
+        
+        
+p1=point(2,4)
+p2=point(3,8)
+
+p=p1.sum(p2)
+p=p1-p2
+
+p.print_point()
+
+
+
+# print(p)
     
