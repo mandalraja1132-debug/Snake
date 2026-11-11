@@ -1291,31 +1291,62 @@
 # e1.sound()
     
     
-class point:
-    def __init__(self,x,y):
-        self.x=x
-        self.y=y
+# class point:
+#     def __init__(self,x,y):
+#         self.x=x
+#         self.y=y
         
-    def sum(self,p):
-        return point((self.x+p.x),(self.y+p.y))
+#     def sum(self,p):
+#         return point((self.x+p.x),(self.y+p.y))
     
-    def print_point(self):
-        print( f"X is {self.x} and y is {self.y}")
+#     def print_point(self):
+#         print( f"X is {self.x} and y is {self.y}")
         
-    def __sub__(self,p):
-        return point((self.x-p.x),(self.y-p.y))
+#     def __sub__(self,p):
+#         return point((self.x-p.x),(self.y-p.y))
         
         
         
-p1=point(2,4)
-p2=point(3,8)
+# p1=point(2,4)
+# p2=point(3,8)
 
-p=p1.sum(p2)
-p=p1-p2
+# p=p1.sum(p2)
+# p=p1-p2
 
-p.print_point()
+# p.print_point()
+# # print(p)
 
+# class car:
+#     def drive():
+#         print("car is moving.... " )
+        
+# c1=car
+# c1.drive()
+        
+# class person():
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+#     def details(self):
+#         print(f"my name is {self.name} and my age is {self.age}.")
+        
+# p1=person("raman",12)
+# print(p1.name)
 
+# p1.details()
 
-# print(p)
+class animal:
+    # def __init__(self):
+        
+    def sound(self):
+        print("some sound")
+
+class dog(animal):
     
+    def sound(self):
+        print("woof")
+
+d1=dog()
+d1.sound()
+        
+        
