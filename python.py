@@ -1335,18 +1335,31 @@
 
 # p1.details()
 
-class animal:
-    # def __init__(self):
+# class animal:
+#     # def __init__(self):
         
-    def sound(self):
-        print("some sound")
+#     def sound(self):
+#         print("some sound")
 
-class dog(animal):
+# class dog(animal):
     
-    def sound(self):
-        print("woof")
+#     def sound(self):
+#         print("woof")
 
-d1=dog()
-d1.sound()
+# d1=dog()
+# d1.sound()
+
+class student:
+    college="Arka jain university"
+    
+    def __init__(self,name,departmanet):
+        self.name=name
+        self.department=departmanet
+    def info(self):
+        print(f"{self.name} is in {self.department} from {self.college}")
+        
+s1=student("rohan","cse")
+s1.info()
+        
         
         
