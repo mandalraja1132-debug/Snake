@@ -1349,17 +1349,38 @@
 # d1=dog()
 # d1.sound()
 
-class student:
-    college="Arka jain university"
+# class student:
+#     college="Arka jain university"
     
-    def __init__(self,name,departmanet):
-        self.name=name
-        self.department=departmanet
-    def info(self):
-        print(f"{self.name} is in {self.department} from {self.college}")
+#     def __init__(self,name,departmanet):
+#         self.name=name
+#         self.department=departmanet
+#     def info(self):
+#         print(f"{self.name} is in {self.department} from {self.college}")
         
-s1=student("rohan","cse")
-s1.info()
+# s1=student("rohan","cse")
+# s1.info()
         
         
+
+class stack:
+    def __init__(self):
+        self.values=[]
+    
+    def push(self,x):
+        return self.values.append(x)
+    def lis(self):
+        return self.values
         
+    def out(self):
+        return (self.values).pop(-1)
+    
+c1=stack()
+c1.push(1)
+c1.push(4)
+c1.push(5)
+c1.push(6)     
+c1.push(7)     
+c1.push(8)  
+print(c1.lis()) 
+print(c1.out())  
